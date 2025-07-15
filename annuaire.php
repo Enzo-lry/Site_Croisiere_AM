@@ -5,7 +5,7 @@ require_once 'database.php';
 $search = isset($_GET['search']) ? trim($_GET['search']) : '';
 try {
     // Construction dynamique de la requête
-    $sql = 'SELECT * FROM inscription WHERE 1=1';
+    $sql = 'SELECT * FROM repartss WHERE 1=1';
     $params = [];
 
     if ($search !== '') {
@@ -13,7 +13,7 @@ try {
         $params['search'] = '%' . $search . '%';
     } else {
         // Requête sans filtre
-        $sql = 'SELECT * FROM inscription';
+        $sql = 'SELECT * FROM repartss';
         $stmt = $db->query($sql);
     }
     $stmt = $db->prepare($sql);
@@ -124,8 +124,8 @@ try {
                             <div class="rd-navbar-nav-wrap">
                                 <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
                                     <li><a class="icon fa fa-facebook" href="#"></a></li>
-                                    <li><a class="icon fa fa-linkedin" href="#"></a></li>
-                                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                                    <li><a class="icon fa fa-linkedin" href="https://www.linkedin.com/company/croisiere-arts-et-metiers?originalSubdomain=fr"></a></li>
+                                    <li><a class="icon fa fa-instagram" href="https://www.instagram.com/croisiere.am/?hl=en"></a></li>
                                 </ul>
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
@@ -172,11 +172,18 @@ try {
                         <strong>Adresse e-mail :</strong> <?= htmlspecialchars($row['Adresse e-mail']) ?><br>
                         <strong>NOM :</strong> <?= htmlspecialchars($row['NOM']) ?><br>
                         <strong>Prénom :</strong> <?= htmlspecialchars($row['Prénom']) ?><br>
+                        <?php
+                        // Génère une URL avec NOM et Prénom en GET
+                        $href = 'teste_pdo.php?nom=' . urlencode($row['NOM']) . '&prenom=' . urlencode($row['Prénom']);
+                        ?>
+                        <a class="button button-default-outline2 button-ujarak" href="<?= $href ?>" data-caption-animate="fadeInLeft"
+                            data-caption-delay="0">Voir</a>
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>
                 <p>Aucun résultat trouvé.</p>
             <?php endif; ?>
+
 
         </div>
         <!-- Global Mailform Output-->

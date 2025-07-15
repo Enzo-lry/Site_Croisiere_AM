@@ -3916,6 +3916,24 @@ hr {
 	background: #50ba87;
 }
 
+.button-default-outline2,
+.button-default-outline2:focus {
+	color: #000000;
+	background-color: transparent;
+	border-color: #000000;
+}
+
+.button-default-outline2:hover,
+.button-default-outline2:active {
+	color: #ffffff;
+	background-color: #50ba87;
+	border-color: #50ba87;
+}
+
+.button-default-outline2.button-ujarak::before {
+	background: #50ba87;
+}
+
 .button-default-outline.button-pipaluk,
 .button-default-outline.button-pipaluk:focus {
 	background: transparent;
