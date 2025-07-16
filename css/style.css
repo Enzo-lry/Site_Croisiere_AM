@@ -26129,7 +26129,7 @@ screen and (max-height: 300px) {
 }
 
 .search-input:focus {
-	border-color: #007bff;
+	border-color: #50ba87;
 	/* Changement de couleur de bordure au focus */
 	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 	/* Ombre douce au focus */
@@ -26140,7 +26140,7 @@ screen and (max-height: 300px) {
 	/* Espacement interne du bouton */
 	margin-left: 15px;
 	/* Marge à gauche pour séparer de l'input */
-	background-color: #007bff;
+	background-color: #50ba87;
 	/* Couleur de fond du bouton (bleu primaire) */
 	color: white;
 	/* Couleur du texte du bouton */
@@ -26161,7 +26161,7 @@ screen and (max-height: 300px) {
 }
 
 .search-button:hover {
-	background-color: #0056b3;
+	background-color: #50ba87;
 	/* Couleur de fond au survol */
 	transform: translateY(-2px);
 	/* Léger déplacement vers le haut au survol */

@@ -135,7 +135,7 @@ try {
                                     </li>
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">A propos</a>
                                     </li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Album</a>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="Album.html">Album</a>
                                     </li>
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Nous contacter</a>
                                     </li>
